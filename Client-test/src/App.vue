@@ -4,19 +4,26 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <div class="max-w-screen-lg mx-auto p-4">
-    <header class="flex justify-between items-center bg-white p-4 shadow">
+    <header class="flex justify-between items-center bg-white p-2 shadow">
+
+      <div class="flex items-center space-x-4 ml-3">
       <img
-        src="https://storage.googleapis.com/a1aa/image/jqLQxLG4RvK9GJAFZ2MA1xYgLmMffpWX7dxcjKEHOQf5sbynA.jpg"
+        src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png"
         alt="Logo"
-        class="h-12 w-12 rounded-full"
+        class="h-12 w-12"
       />
-      <div class="flex space-x-4 text-gray-600">
-        <i class="fas fa-bell text-xl"></i>
-        <i class="fas fa-user-circle text-xl"></i>
-      </div>
+    </div>
+
+    <div class="flex items-center mr-3">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/5509/5509636.png"
+        alt="Logo"
+        class="h-12 w-12"
+      />
+    </div>
     </header>
 
-    <section class=" text-white text-center py-8">
+    <section class="text-white text-center py-2">
       <div
         id="indicators-carousel"
         class="relative w-full"
@@ -47,7 +54,7 @@ import HelloWorld from "./components/HelloWorld.vue";
               src="https://t4.ftcdn.net/jpg/01/20/28/25/360_F_120282530_gMCruc8XX2mwf5YtODLV2O1TGHzu4CAb.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
-            />
+            />~
           </div>
 
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -162,72 +169,92 @@ import HelloWorld from "./components/HelloWorld.vue";
       </div>
     </section>
 
-    <section class="bg-white shadow mt-6 p-6 rounded">
+    <section class="bg-white shadow mt-2 p-6 rounded">
       <div class="flex justify-between items-center">
         <h2 class="text-lg font-semibold">Your Level</h2>
-        <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+        <a href="#" class="text-orange-500 hover:underline">Learn More</a>
       </div>
 
-      <div class="flex justify-center items-center h-full w-full mt-6">
-        <div class="flex justify-center items-center">
-          <ol
-            class="flex items-center w-full mb-4 sm:mb-5 justify-center mx-auto"
-          >
-            <li
-              class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800"
+      <div class="flex flex-col items-center mt-6">
+        <div
+          class="flex items-center space-x-4 sm:space-x-8 flex-wrap justify-center"
+        >
+          <div class="relative flex flex-col items-center">
+            <div
+              class="w-14 h-14 rounded-full flex items-center justify-center border-4 border-green-500"
             >
-              <div
-                class="flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0"
-              >
-                <p class="text-lg font-semibold">Silver</p>
-              </div>
-            </li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/12624/12624745.png"
+                alt="Silver Icon"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="mt-2 text-sm font-semibold text-gray-700">Silver</p>
+          </div>
 
-            <li
-              class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700"
+          <div class="w-8 h-1 bg-gray-300 sm:w-12"></div>
+
+          <div class="relative flex flex-col items-center">
+            <div
+              class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center border-4 border-yellow-400"
             >
-              <div
-                class="flex items-center justify-center w-20 h-20 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0"
-              >
-                <p class="text-lg font-semibold">Gold</p>
-              </div>
-            </li>
+              <!-- <div class="w-6 h-6 bg-yellow-300 rounded-full"></div> -->
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/891/891399.png"
+                alt="Silver Icon"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="mt-2 text-sm font-semibold text-gray-700">Gold</p>
+          </div>
 
-            <li class="flex items-center w-full">
-              <div
-                class="flex items-center justify-center w-20 h-20 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0"
-              >
-                <p class="text-lg font-semibold">Platinum</p>
-              </div>
-            </li>
-          </ol>
+          <div class="w-8 h-1 bg-gray-300 sm:w-12"></div>
+
+          <div class="relative flex flex-col items-center">
+            <div
+              class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center border-4 border-gray-300"
+            >
+              <!-- <div class="w-6 h-6 bg-gray-500 rounded-full"></div> -->
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/891/891399.png"
+                alt="Silver Icon"
+                class="w-10 h-10"
+              />
+            </div>
+            <p class="mt-2 text-sm font-semibold text-gray-700">Platinum</p>
+          </div>
         </div>
-      </div>
-      <p class="text-center text-sm mt-4 text-gray-600">
-        Spend
-        <span class="font-bold text-black">3,500,001</span> by
-        <span class="font-bold text-black">23 Nov 2024</span> to reach
-        <span class="text-yellow-500">Gold</span>
-      </p>
-      <div class="relative w-full mt-4">
-        <div class="bg-gray-200 h-2 rounded-full">
-          <div class="bg-yellow-400 h-2 rounded-full" style="width: 40%"></div>
+
+        <p class="text-center text-sm mt-6 text-gray-600">
+          Spend
+          <span class="font-bold text-black">3,500,001</span> by
+          <span class="font-bold text-black">23 Nov 2024</span> to reach
+          <span class="text-yellow-500 font-semibold">Gold</span>
+        </p>
+
+        <div class="relative w-full mt-4">
+          <div class="bg-gray-200 h-2 rounded-full">
+            <div
+              class="bg-yellow-400 h-2 rounded-full"
+              style="width: 40%"
+            ></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-white shadow mt-6 p-6 rounded">
+    <section class="bg-white shadow mt-2 p-4 rounded">
       <div class="flex justify-between items-center">
         <span class="text-gray-700 font-medium">Bakmi GM Points</span>
         <span class="font-bold text-lg">40</span>
       </div>
-      <p class="text-sm text-gray-600 mt-2">
+      <p class="text-sm text-gray-600">
         40 will expire on <span class="font-bold text-black">22 Feb 2024</span>
         <a href="#" class="text-blue-500 hover:underline">See Details</a>
       </p>
     </section>
 
-    <section class="bg-blue-900 rounded-lg text-white text-center py-8 my-5">
+    <section class="bg-blue-900 rounded-lg text-white text-center py-6 my-2">
       <h1 class="text-3xl font-bold">Roll with Patrol</h1>
       <div class="flex justify-center space-x-6 mt-6">
         <img
@@ -248,19 +275,19 @@ import HelloWorld from "./components/HelloWorld.vue";
     <section class="bg-white p-4">
       <div class="grid grid-cols-3 gap-4 text-center mb-8">
         <div>
-          <div class="bg-blue-100 rounded-full p-4 mx-auto mb-2">
+          <div class="bg-blue-100 rounded-full p-4 mb-2">
             <img
               alt="Basket with items icon"
               class="mx-auto"
               height="50"
-              src="https://cdn-icons-png.flaticon.com/512/6632/6632848.png"
               width="50"
+              src="https://cdn-icons-png.flaticon.com/512/6632/6632848.png"
             />
           </div>
           <p class="text-gray-700">Order</p>
         </div>
         <div>
-          <div class="bg-red-100 rounded-full p-4 mx-auto mb-2">
+          <div class="bg-red-100 rounded-full p-4 mb-2">
             <img
               alt="Basket with items icon"
               class="mx-auto"
@@ -378,8 +405,11 @@ import HelloWorld from "./components/HelloWorld.vue";
     <section class="mt-8">
       <h1 class="text-3xl font-bold mb-2">Privileges</h1>
       <p class="text-gray-600 mb-6">Keep discovering our promo and news</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg shadow-md">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div
+          class="bg-white rounded-lg shadow-md"
+          style="height: auto; width: 100%"
+        >
           <img
             src="https://honeyland.com.my/wp-content/uploads/2020/03/Platinum-Member.jpeg"
             alt="PLATINUM Member"
